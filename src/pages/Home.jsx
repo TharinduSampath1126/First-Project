@@ -34,13 +34,11 @@ export default function home() {
       </div>
 
 
-      <div className=' bg-blue-100 w-100% h-200 flex justify-center'>
+      <div className='absolute bg-blue-100 w-[1440px] h-[743px] top-[102px]'>
 
-          <div className=' w-250 h-200 grid items-center '>
-              <div className=' w-200 h-50 ml-30 mt-40 '>
-                  <p className='text-5xl font-bold'>Experienced <span className='text-white'>mobile and web</span> 
-                  <br />applications and website 
-                  <br />builders measuring
+          <div className='absolute w-[630px] h-[450px] top-[230px] left-[123px] rounded-[10px] border border-[#1090CB] '>
+              <div className=' absolute w-[630px] h-[193px] top-[230px] left-[123px] '>
+                  <p className='text-[40px] font-semibold leading-[100%] tracking-normal font-poppins'>Experienced <span className='text-[40px] font-semibold leading-[100%] tracking-normal font-poppins'>mobile and web</span> applications and website builders measuring.
                   </p>
               </div>
               <div className=' w-200 h-50 ml-30'>
@@ -61,7 +59,7 @@ export default function home() {
 
       <div className=' w-full h-40 grid grid-cols-4'>
           <div>
-              <img src={Group23} alt="Group 23" className='mt-10 ml-15'/>
+              <img src={Group23} alt="Group 23" className='mt-10 ml-15 '/>
           </div>
           <div>
               <img src={Group24} alt="Group 23" className='mt-10 ml-15' />
@@ -76,12 +74,23 @@ export default function home() {
 
       <hr />
 
-      <div className='mt-10 flex justify-center items-center pb-10'>
-        <img src={Group15} alt="" className=''/>
+      <div className=' justify-center mt-20 mb-20'>
+        <h1 className='text-[33px] text-[#252525] font-semibold leading-[160%] tracking-normal text-center font-poppins'>Lorem Ipsum is simply dummy text of the printing. </h1> <br />
+        <h2 className='text-[18px] font-normal leading-[175%] tracking-normal text-center font-poppins text-[#868686] '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /> Lorem Ipsum has been the industry's</h2>
       </div>
 
-      
-      
+      <div className='w-1317px h-537px top-[1319px] left-[123px] bg-red-100'>
+            
+      </div>
+
+      <div className='absolute w-[1317px] h-[537px] top-[1319px] left-[123px] bg-red-100'>
+          <div className='absolute bg-blue-100 w-[516px] h-[389px] top-[1423px] left-[123px]'>
+
+          </div>
+          <div className='absolute w-[803px] h-[537px] top-[1319px] left-[637px] bg-green-100'>
+
+          </div>
+      </div>
 
       
     </div>
