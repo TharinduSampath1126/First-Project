@@ -1,26 +1,71 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const links = [
+    { name: "Home", href: "#home" },
+    { name: "About us", href: "#about" },
+    { name: "Service", href: "#service" },
+    { name: "Blog", href: "#blog" },
+    {
+      name: "Contact us",
+      href: "#contact",
+      color: "bg-[#1090CB] rounded-xl p-2 text-center text-white",
+    },
+  ];
+
   return (
-    <section className=' h-[102px] flex items-center justify-between fixed bg-white w-[1440px]   '>
-
-        <div className='w-[82px] h-[44px] ml-[32px]'>
-           <p className='mt-1.5 text-[#1090CB] font-Poppins font-bold text-[29px] leading-[100%] tracking-normal'>LOGO</p>
+    <div className="shadow-md fixed top-0 lg:w-[1440px] w-full  p-4 bg-white z-10 font-[400]">
+      <div className="px-4 w-full flex items-center justify-between max-w-[1440px] mx-auto">
+        
+        <div>
+          <p className="text-[#1090CB] text-[20px] font-bold">LOGO</p>
         </div>
 
-        <div className='flex justify-between mr-8 '>
-            <ul className='w-[436px] h-[24px] flex space-x-19 mt-2 mr-15'>
-                <li className='text-[#1090CB]'>Home</li>
-                <li>About us</li>
-                <li>Services</li>
-                <li>Blog</li>
-            </ul>
-            <button className='w-[125px] h-[41px] bg-[#1090CB] rounded-sm text-white font-poppins'>Contact us</button>
+        
+        <div className="hidden lg:flex items-center space-x-6">
+          {links.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className={`${link.color || "text-gray-700 hover:text-blue-600"} transition`}
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
 
+       
+        <div className="lg:hidden flex">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="hover:bg-sky-100 p-2 rounded"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </div>
 
-
-    </section>
-  )
+     
+      {isOpen && (
+        <div className="lg:hidden bg-white shadow-lg absolute top-[64px] left-0 w-full z-20">
+          <div className="flex flex-col space-y-4 px-5 pt-5 pb-5">
+            {links.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                className={`${link.color || "text-gray-700 hover:text-blue-600"} transition block`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 

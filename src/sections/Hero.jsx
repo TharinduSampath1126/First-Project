@@ -11,7 +11,7 @@ export default function Hero() {
             builders measuring.
           </h1>
 
-          <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl mt-10 mb-8 leading-relaxed sm:text-left md:text-left">
+          <p className="text-gray-600 font-[400] text-sm sm:text-base md:text-lg lg:text-xl mt-10 mb-8 leading-relaxed sm:text-left md:text-left">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
             applications and website builders with dozens of completed projects.
             We build and develop mobile applications for several top platforms,
@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
 
      
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start mt-18  ">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center md:justify-start mt-18 font-[400] ">
              <button className="bg-[#1090CB] w-[193px] h-[51px] text-white px-6 py-3 rounded-md text-sm sm:text-base shadow-md hover:bg-[#0d7fb0] transition">
                 Contact us
              </button>
@@ -29,8 +29,12 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className=''>
-          <img src={Frame19} alt="" />
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+          <img 
+            src={Frame19} 
+            alt="Hero illustration" 
+            className="w-full max-w-[500px] h-auto object-contain"
+          />
         </div>
 
     </section>

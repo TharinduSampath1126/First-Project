@@ -8,18 +8,18 @@ import instagram from '../assets/instagram.png'
 function Footer() {
   return (
      <footer className="bg-white ml-5 mr-5 ">
-      <div className=" py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
-        
-        <div>
+      <div className=" py-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-15 md:text-center text-center lg:text-left">
+    
+        <div className=''>
           <h2 className="font-Poppins font-bold text-base leading-[100%] tracking-normal text-[#00329B]">LOGO</h2>
           <p className=" mt-8 font-Poppins font-normal text-[16px] leading-[100%] tracking-[0%] text-[#515151]">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           </p>
-          <p className="text-gray-800 mt-8 text-sm">@Lorem</p>
+          <p className="text-gray-800 mt-8 text-sm font-[400]">@Lorem</p>
         </div>
 
         
-        <div className='ml-20'>
+        <div className='lg:ml-20 sm:ml-0'>
           <h3 className="font-Poppins font-medium text-[17px] leading-[100%] tracking-normal">About us</h3>
           <ul className="space-y-2 font-Poppins font-normal text-[16px] leading-[100%] tracking-[0%] text-[#515151] mt-5">
             <li><a href="#">Lorem</a></li>
@@ -39,7 +39,7 @@ function Footer() {
         </div>
 
         
-        <div className="flex md:justify-end items-end space-x-4">
+        <div className="flex justify-center lg:justify-end items-end space-x-4">
           <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full shadow-md text-gray-600 hover:text-white hover:bg-blue-600 transition">
             <img src={facebook} alt="facebook" />
           </a>

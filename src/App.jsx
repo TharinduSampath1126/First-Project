@@ -11,18 +11,20 @@ import Footer from "./sections/Footer";
 
 function App() {
   return (
-      <div className="max-w-[1440px] mx-auto justify-self-center">
-
+    <div className="min-h-screen overflow-x-hidden ">
+      <div className="max-w-[1440px] mx-auto px- sm:px- lg:px-">
         <Navbar/>
-        <Hero/>
-        <Section3/>
-        <Section4/>
-        <Section5/>
-        <Section6/>
-        <Contact/>
+        <main>
+          <Hero/>
+          <Section3/>
+          <Section4/>
+          <Section5/>
+          <Section6/>
+          <Contact/>
+        </main>
         <Footer/>
-        
       </div>
+    </div>
   );
 }
 
