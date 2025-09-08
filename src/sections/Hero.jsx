@@ -5,19 +5,19 @@ import greenshape from  '../assets/greenshape.png'
 
 export default function Hero() {
   return (
-    <section className='  flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-br from-[#f3f6fd] to-[#eaf6fb] px-6 sm:px-10 md:px-16 lg:px-24 py-12 md:py-20 '>
+    <section className='min-h-screen flex flex-col-reverse md:flex-row items-center justify-between bg-[#1090CB]/10 px-6 sm:px-10 md:px-16 lg:px-24 py-10 md:py-10 '>
 
-        <img src={blueshape} alt="Blue Shape" className='hidden lg:block absolute top-[300px] left-[1430px]'/>
-        <img src={greenshape} alt="Green Shape" className='hidden lg:block absolute top-[425px] left-[37px]'/>
+        <img src={blueshape} alt="Blue Shape" className='hidden lg:block absolute top-[220px] left-[1430px]'/>
+        <img src={greenshape} alt="Green Shape" className='hidden lg:block absolute top-[345px] left-[37px]'/>
 
         <div className=" w-full md:w-1/2 h-150 text-center md:text-left mt-10 md:mt-[102px]  items-center content-center ">
-          <h1 className="text-[40px]  font-bold leading-snug mb-6">
+          <h1 className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]  font-bold leading-snug mb-6">
             Experienced <span className="text-[#1090CB]">mobile and web</span> <br />
             applications and website <br />
             builders measuring.
           </h1>
 
-          <p className="text-gray-600 font-[400] sm:text-base md:text-lg lg:text-xl mt-10 mb-8 leading-relaxed sm:text-left md:text-left">
+          <p className="text-gray-600 font-[400] text-[12px] sm:text-[12px] md:text-[14px] lg:text-[16px] mt-10 mb-8 leading-relaxed sm:text-left md:text-left">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
             applications and website builders with dozens of completed projects.
             We build and develop mobile applications for several top platforms,
@@ -25,11 +25,11 @@ export default function Hero() {
           </p>
 
      
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center md:justify-start mt-18 font-[400] ">
-             <button className="bg-[#1090CB] w-[193px] h-[51px] text-white px-6 py-3 rounded-md text-sm sm:text-base shadow-md hover:bg-[#0d7fb0] transition">
+          <div className="flex flex-row items-center gap-4 sm:gap-6 justify-center md:justify-start mt-18 font-[400] ">
+             <button className="bg-[#1090CB] w-[120px] h-[30px] sm:w-[140px] sm:h-[40px] md:w-[193px] md:h-[51px] lg:w-[193px] lg:h-[51px] text-white sm:px-5 sm:py-2 md:px-6 md:py-3 lg:px-6 lg:py-3 rounded-md text-sm sm:text-base shadow-md hover:bg-[#0d7fb0] transition">
                 Contact us
              </button>
-             <button className="border border-[#1090CB] text-[#1090CB] w-[193px] h-[51px] px-6 py-3 rounded-md text-sm sm:text-base bg-white shadow-sm hover:bg-[#f0f9ff] transition">
+             <button className="border border-[#1090CB] text-[#1090CB] w-[120px] h-[30px] sm:w-[140px] sm:h-[40px] md:w-[193px] md:h-[51px] lg:w-[193px] lg:h-[51px] sm:px-5 sm:py-2 md:px-6 md:py-3 lg:px-6 lg:py-3 rounded-md text-sm sm:text-base bg-white shadow-sm hover:bg-[#f0f9ff] transition">
                   View more
              </button>
           </div>

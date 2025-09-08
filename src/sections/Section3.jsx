@@ -1,29 +1,32 @@
 import React from "react";
-import vector from "../assets/vector.png";
+import s31 from "../assets/s31.png";
+import s32 from "../assets/s32.png";
+import s33 from "../assets/s33.png";
+import s34 from "../assets/s34.png";
 
 
 const Section3 = () => {
   const services = [
     {
-      icon: <img src={vector} alt="Web Application" className="w-6 h-6 md:w-8 md:h-8" />,
+      icon: <img src={s31} alt="Web Application" className="w-6 h-6 md:w-8 md:h-8" />,
       title: "Web Application",
       description: "Lorem Ipsum is simply ",
       bgColor: "bg-purple-100",
     },
     {
-      icon: <img src={vector} alt="SEO" className="w-6 h-6 md:w-8 md:h-8" />,
+      icon: <img src={s32} alt="SEO" className="w-6 h-6 md:w-8 md:h-8" />,
       title: "SEO",
       description: "Lorem Ipsum is simply ",
       bgColor: "bg-green-100",
     },
     {
-      icon: <img src={vector} alt="AR/VR" className="w-6 h-6 md:w-8 md:h-8" />,
+      icon: <img src={s33} alt="AR/VR" className="w-6 h-6 md:w-8 md:h-8" />,
       title: "AR/VR Solutions",
       description: "Lorem Ipsum is simply .",
       bgColor: "bg-blue-100",
     },
     {
-      icon: <img src={vector} alt="Mobile Apps" className="w-6 h-6 md:w-8 md:h-8" />,
+      icon: <img src={s34} alt="Mobile Apps" className="w-6 h-6 md:w-8 md:h-8" />,
       title: "Mobile Applications",
       description: "Lorem Ipsum is simply ",
       bgColor: "bg-red-100",
@@ -48,7 +51,7 @@ const Section3 = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <hr className="border  border-[#C7C7C7] mt-8 md:mt-10" />
+        <hr className="border w-full border-[#C7C7C7] mt-8 md:mt-10" />
       </div>
     </section>
   );

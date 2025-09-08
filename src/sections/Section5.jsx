@@ -65,7 +65,7 @@ function Section5() {
     <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:p-12">
       <div className=''>
             <div className='flex'>
-                  <div className={`bg-[#1090CB] flex justify-center items-center w-[58px] h-[58px] rounded-4xl`}>
+                  <div className={`bg-[#9208D3] flex justify-center items-center w-[58px] h-[58px] rounded-4xl`}>
                     <img src={happy1} alt="happy1" />
                   </div>
                   <div className='ml-5'>
