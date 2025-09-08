@@ -1,9 +1,15 @@
 import React from 'react'
-import Frame19 from '../assets/Frame19.png' 
+import Frame19 from '../assets/Frame19.png'
+import blueshape from '../assets/blueshape.png'
+import greenshape from  '../assets/greenshape.png'
 
 export default function Hero() {
   return (
     <section className='  flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-br from-[#f3f6fd] to-[#eaf6fb] px-6 sm:px-10 md:px-16 lg:px-24 py-12 md:py-20 '>
+
+        <img src={blueshape} alt="Blue Shape" className='hidden lg:block absolute top-[300px] left-[1430px]'/>
+        <img src={greenshape} alt="Green Shape" className='hidden lg:block absolute top-[425px] left-[37px]'/>
+
         <div className=" w-full md:w-1/2 h-150 text-center md:text-left mt-10 md:mt-[102px]  items-center content-center ">
           <h1 className="text-[40px]  font-bold leading-snug mb-6">
             Experienced <span className="text-[#1090CB]">mobile and web</span> <br />
@@ -11,7 +17,7 @@ export default function Hero() {
             builders measuring.
           </h1>
 
-          <p className="text-gray-600 font-[400] text-sm sm:text-base md:text-lg lg:text-xl mt-10 mb-8 leading-relaxed sm:text-left md:text-left">
+          <p className="text-gray-600 font-[400] sm:text-base md:text-lg lg:text-xl mt-10 mb-8 leading-relaxed sm:text-left md:text-left">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
             applications and website builders with dozens of completed projects.
             We build and develop mobile applications for several top platforms,
