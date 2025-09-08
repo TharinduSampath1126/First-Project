@@ -32,13 +32,11 @@ Section3 = () => {
   ];
 
 return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-white ">
       {/* ================= SERVICES SECTION ================= */}
-      <div className="absolute left-0 top-160 z-80">
-        <img src="" alt="" className="w-10 h-90" />
-      </div>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <div className=" mx-auto justify-self-center ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-15 ">
           {services.map((service, index) => (
             <div key={index} className="flex items-start space-x-4">
               <div className={`p-4 rounded-xl ${service.bgColor}`}>
@@ -52,7 +50,7 @@ return (
           ))}
         </div>
       </div>
-      <hr className="w-full border border-[#C7C7C7] mt-10" />
+      <hr className="w-[1440px] mx-auto px-6 justify-self-center border border-[#C7C7C7] mt-10 " />
     </section>
     
   );

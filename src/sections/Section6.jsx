@@ -22,9 +22,9 @@ function Section6() {
     ]
 
   return (
-    <div className='w-full grid  place-items-center'>
+    <div className=' mt-10 '>
 
-        <div className='w-[1194px] h-[459px] flex justify-self-center space-x-10 mt-40 mb-35 '>
+        <div className='grid sm:grid-cols-1  lg:grid-cols-2 gap-10 mb-20 justify-self-center'>
             <div className='w-[572px] h-[459px] rounded-[20px] bg-[#F4F4F4] place-content-center space-y-10'>
                 <p className='text-[#252525] font-poppins font-semibold text-[25px] leading-[170%] tracking-normal text-center'>Lorem Ipsum is simply <br /> dummy text.</p>
                 <p className='text-[#545454] font-poppins font-normal text-[16px] leading-[170%] tracking-normal text-center'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced <br /> mobile and web applications and website builders <br /> measuring dozens of completed projects. We build and <br /> develop mobile applications for several top platforms, <br /> including Android  & IOS. </p>
@@ -37,9 +37,9 @@ function Section6() {
             </div>
         </div>
 
-        <p className='font-poppins font-medium text-[24px] leading-[159%] tracking-normal'>You will be in good Company</p>
+        <p className='font-poppins font-medium text-[24px] leading-[159%] tracking-normal justify-self-center'>You will be in good Company</p>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-25'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-25 ml-10 mr-10'>
             {images.map((image) => (
                 <div>{image.img}</div>
             ))}

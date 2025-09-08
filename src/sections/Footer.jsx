@@ -7,8 +7,8 @@ import instagram from '../assets/instagram.png'
 
 function Footer() {
   return (
-     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+     <footer className="bg-white ml-5 mr-5 ">
+      <div className=" py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         
         <div>
           <h2 className="font-Poppins font-bold text-base leading-[100%] tracking-normal text-[#00329B]">LOGO</h2>
@@ -56,7 +56,7 @@ function Footer() {
       </div>
 
       
-      <div className="border border-[#D2D2D2] py-4">
+      <div className=" py-4">
         <p className="text-center font-Poppins font-normal text-[16px] leading-[100%] tracking-[0%] text-[#515151]">
           Copyright © 2021 Lorem All rights Reserved
         </p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <section className='max-w-full h-[102px] flex items-center justify-between  '>
+    <section className=' h-[102px] flex items-center justify-between fixed bg-white w-[1440px]   '>
 
         <div className='w-[82px] h-[44px] ml-[32px]'>
            <p className='mt-1.5 text-[#1090CB] font-Poppins font-bold text-[29px] leading-[100%] tracking-normal'>LOGO</p>
@@ -17,6 +17,8 @@ export default function Navbar() {
             </ul>
             <button className='w-[125px] h-[41px] bg-[#1090CB] rounded-sm text-white font-poppins'>Contact us</button>
         </div>
+
+
 
     </section>
   )

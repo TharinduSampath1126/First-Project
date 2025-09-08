@@ -3,10 +3,14 @@ import React from 'react'
 export default function Section4() {
   return (
 
-    <section className='grid place-items-center w-full'>
-      <div className=' mt-10 w-[847px] h-[140px] space-y-[30px]'>
-        <p className='font-poppins font-semibold text-[33px] leading-[160%] tracking-normal text-center '>Lorem Ipsum is simply dummy text of the printing. </p>
-        <p className='font-poppins font-normal text-[18px] leading-[175%] tracking-normal text-center text-[#868686]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+    <section className="px-4 py-8 md:py-12">
+      <div className="space-y-6 text-center max-w-2xl mx-auto">
+        <p className="font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl leading-snug md:leading-[160%] tracking-normal">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+        <p className="font-poppins font-normal text-base md:text-lg lg:text-xl leading-relaxed md:leading-[175%] tracking-normal text-[#868686]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        </p>
       </div>
     </section>
     

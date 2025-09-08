@@ -11,7 +11,7 @@ import Footer from "./sections/Footer";
 
 function App() {
   return (
-      <div>
+      <div className="max-w-[1440px] mx-auto justify-self-center">
 
         <Navbar/>
         <Hero/>
