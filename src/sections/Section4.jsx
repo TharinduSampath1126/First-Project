@@ -3,8 +3,8 @@ import React from 'react'
 export default function Section4() {
   return (
 
-    <section className="px-4 py-10 md:py-12">
-      <div className="space-y-6 text-center mx-auto">
+    <section className="mt-[50px] mb-[55px]">
+      <div className="space-y-[32px] text-center mx-auto ">
         <p className="font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl leading-snug  tracking-normal">
           Lorem Ipsum is simply dummy text of the printing.
         </p>

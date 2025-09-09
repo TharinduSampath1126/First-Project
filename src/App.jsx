@@ -12,9 +12,10 @@ import Footer from "./sections/Footer";
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden ">
-      <div className="max-w-[1440px] mx-auto px- sm:px- lg:px-">
+      <div className="max-w-full mx-auto px- sm:px- lg:px-">
         <Navbar/>
         <main>
+          
           <Hero/>
           <Section3/>
           <Section4/>

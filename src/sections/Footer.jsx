@@ -7,7 +7,7 @@ import instagram from '../assets/instagram.png'
 
 function Footer() {
   return (
-     <footer className="bg-white ml-5 mr-5 ">
+     <footer className="bg-white lg:ml-[101px] lg:mr-[120px] md:pt-[40px]">
       <div className=" py-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-15 md:text-center text-center lg:text-left">
     
         <div className=''>
@@ -55,7 +55,10 @@ function Footer() {
         </div>
       </div>
 
-      
+      <div className='md:mb-[25px] md:mt-[10px]'>
+        <hr className='border border-[#D2D2D2]'/>
+      </div>
+
       <div className=" py-4">
         <p className="text-center font-Poppins font-normal text-[16px] leading-[100%] tracking-[0%] text-[#515151]">
           Copyright © 2021 Lorem All rights Reserved

@@ -34,7 +34,7 @@ const Section3 = () => {
   ];
 
   return (
-    <section className="py-8 md:py-12 bg-white">
+    <section className="py- md:py-[43px] bg-white">
       <div className="max-w-7xl mx-auto font-[400]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => (
@@ -50,9 +50,9 @@ const Section3 = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <hr className="border w-full border-[#C7C7C7] mt-8 md:mt-10" />
-      </div>
+      
+      <hr className="border border-[#D2D2D2] mt-[5px]" />
+
     </section>
   );
 };export default Section3;
