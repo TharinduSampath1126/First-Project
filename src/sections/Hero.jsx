@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section id='hero' className='bg-[#1090CB]/10 min-h-screen w-full flex items-center justify-center relative '>
 
-        <div className='max-w-[1536px]  flex flex-col-reverse md:flex-row items-center justify-between  px-6 sm:px-10 md:px-16 lg:px-24 py-0 md:pb-0 relative'>
+        <div className='max-w-[1536px]  flex flex-col-reverse md:flex-row items-center justify-between  px-6 sm:px-10 md:px-16 lg:pl-[123px] py-0 md:pb-0 relative'>
 
           <img src={blueshape} alt="Blue Shape" className='  absolute hidden lg:block top-[220px] left-[1466px]'/>
           <img src={greenshape} alt="Green Shape" className='  absolute hidden lg:block top-[345px] left-[0px]'/>
@@ -39,7 +39,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end relative lg:pr-[65px]">
 
              {/* Yellow Shape Behind Image */}
             <img 

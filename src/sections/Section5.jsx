@@ -7,7 +7,7 @@ import happy1 from '../assets/happy1.png'
 function Section5() {
 
   return (
-    <div className='container mx-auto px-4 md:px-6 lg:px-8'>
+    <div className='container mx-auto px-4 md:px-6 '>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-[100px] lg:mb-[179px]">
         <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:p-12 ">

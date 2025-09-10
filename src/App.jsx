@@ -15,7 +15,6 @@ function App() {
       <div className="max-w-full mx-auto px- sm:px- lg:px-">
         <Navbar/>
         <main>
-          
           <Hero/>
           <Section3/>
           <Section4/>
