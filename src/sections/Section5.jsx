@@ -22,10 +22,10 @@ function Section5() {
               </div>
             </div>
           </div>
-          <p className="font-poppins font-semibold text-2xl md:text-3xl leading-tight text-[#1090CB]">
+          <p className="font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]">
             Lorem Ipsum <span className="text-[#252525]">is simply dummy text of the printing.</span>
           </p>
-          <p className="font-poppins font-normal text-sm md:text-base leading-relaxed text-[#545454]">
+          <p className="font-poppins font-[400] text-sm md:text-base leading-relaxed text-[#545454]">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android & IOS.
           </p>
         </div>
@@ -53,8 +53,8 @@ function Section5() {
                   </div>
                 </div>
               </div>
-            <p className='font-poppins font-semibold text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text of the printing.</span> </p>
-            <p className='font-poppins font-normal text-[16px] leading-[170%] tracking-normal text-[#545454]'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
+            <p className='font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text of the printing.</span> </p>
+            <p className='font-poppins font-[400] text-[16px] leading-[170%] tracking-normal text-[#545454]'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
           </div>
       </div>
 
@@ -74,8 +74,8 @@ function Section5() {
                       </div>
                     </div>
                 </div>
-                <p className='font-poppins font-semibold text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text of the printing.</span> </p>
-                <p className='font-poppins font-normal text-[16px] leading-[170%] tracking-normal text-[#545454]'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
+                <p className='font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text of the printing.</span> </p>
+                <p className='font-poppins font-[400] text-[16px] leading-[170%] tracking-normal text-[#545454]'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
         </div>
         <div className="flex items-center justify-center ">
           <img src={Frame24} alt="Frame24" className="max-w-full h-auto" />

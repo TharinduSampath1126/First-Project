@@ -4,10 +4,10 @@ import caspio from '../assets/caspio.png'
 import Hypergrid from '../assets/Hypergrid.png'
 import leotrippi from '../assets/leotrippi.png'
 import bellIcon from '../assets/Bell.png'
-import yellowshape from '../assets/yellowshape.png'
+import frame25 from '../assets/yellowshape.png'
 import PaiChart from '../assets/PaiChart.png'
 import starIcon from '../assets/Star.png'
-import pinkshape from '../assets/pinkshape.png'
+import frame26 from '../assets/pinkshape.png'
 
 
 function Section6() {
@@ -28,56 +28,48 @@ function Section6() {
     ]
 
   return (
-    <div className='relative mt-[120px] lg:mt-[198px] max-w-[1536px] mx-auto px-4'>
+    <div className='relative mt-[70px] lg:mt-[163px] max-w-[1536px] mx-auto px-4 overflow-hidden lg:p-[35px]'>
 
-        {/* <div>
-            <img src={Bell} alt="" className='absolute left-[1180px] top-[2830px] hidden lg:block '/>
-        </div> */}
+        {/* Left Background Frame (Frame 25) */}
+        <img 
+        src={frame25} 
+        alt="Frame 25" 
+        className="hidden lg:block absolute left-[-80px] top-[450px] w-[300px] h-[505px] z-0  pointer-events-none"
+        />
 
-        {/* 
-        <div>
-            <img src={yellowshape} alt="yellowshape" className='absolute left-[] top-[3350px] hidden lg:block'/>
-        </div>
-        
-        <div>
-            <img src={pinkshape} alt="pinkshape" className='absolute left-[1000px] top-[3150px] hidden lg:block z-10'/>
-        </div>
-        */}
-
-        {/* <div>
-            <img src={PaiChart} alt="PaiChart" className='absolute left-[1030px] top-[3810px] hidden lg:block'/>
-        </div>  */}
-
-        {/* <div>
-            <img src={Star} alt="Star" className='absolute left-[130px] top-[3680px] hidden lg:block'/>
-        </div> */}
+        {/* Right Background Frame (Frame 26) */}
+        <img 
+        src={frame26} 
+        alt="Frame 26" 
+        className="hidden lg:block absolute right-[0px] top-[100px] w-[433px] h-[505px] z-0  pointer-events-none"
+        />
 
         {/* ✅ Bell Icon Positioned Top Right */}
-      <img 
-        src={bellIcon} 
-        alt="Bell Icon" 
-        className="hidden lg:block absolute  top-[-80px] right-[200px] " 
-      />
+        <img 
+            src={bellIcon} 
+            alt="Bell Icon" 
+            className="hidden md:hidden lg:block absolute  top-[-40px] right-[200px] z-20" 
+        />
 
         
         
 
         <div className='grid grid-cols-1  justify-self-center lg:grid-cols-2 gap-10 mb-[100px] lg:mb-[184px] md:justify-self-center lg:justify-self-center font-[400] lg:mx-o   '>
             <div className='container space-x-5 ml-[10px] mr-[10px] md:mx-auto lg:mx-auto py-5 w-auto md:w-[572px] md:h-[459px] lg:w-[572px] lg:h-[459px] rounded-[20px] bg-[#F4F4F4] place-content-center space-y-10 '>
-                <p className='text-[#252525] font-poppins font-semibold text-[25px] leading-[170%] tracking-normal text-center'>Lorem Ipsum is simply <br /> dummy text.</p>
-                <p className='text-[#545454] font-poppins font-normal sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[170%] tracking-normal text-center px-2'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
-                <button className='w-[153px] h-[49px] rounded-[10px] bg-[#1090CB] flex justify-self-center items-center place-content-center text-[#FFFFFF]'>view more</button>
+                <p className='text-[#252525] font-poppins font-[600] text-[25px] leading-[170%] tracking-normal text-center'>Lorem Ipsum is simply <br /> dummy text.</p>
+                <p className='text-[#545454] font-poppins font-[400] sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[170%] tracking-normal text-center px-2'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
+                <button className='w-[153px] h-[49px] rounded-[10px] bg-[#1090CB] flex justify-self-center items-center place-content-center text-[#FFFFFF]'>View more</button>
             </div>
-            <div className='container mx-auto py-5 ml-[10px] mr-[10px] w-auto md:w-[572px] md:h-[459px] lg:w-[572px] lg:h-[459px] rounded-[20px] bg-[#1090CB] place-content-center space-y-10 '>
-                <p className='text-[#FFFFFF] font-poppins font-semibold text-[25px] leading-[170%] tracking-normal text-center'>Lorem Ipsum is simply <br /> dummy text.</p>
-                <p className='text-[#FFFFFF] font-poppins font-normal text-[16px] leading-[170%] tracking-normal text-center px-2'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
-                <button className='w-[153px] h-[49px] rounded-[10px] bg-[#FFFFFF] flex justify-self-center justify-center items-center place-content-center '>view more</button>
+            <div className='container relative z-10 mx-auto py-5 ml-[10px] mr-[10px] w-auto md:w-[572px] md:h-[459px] lg:w-[572px] lg:h-[459px] rounded-[20px] bg-[#1090CB] place-content-center space-y-10 '>
+                <p className='text-[#FFFFFF] font-poppins font-[600] text-[25px] leading-[170%] tracking-normal text-center'>Lorem Ipsum is simply <br /> dummy text.</p>
+                <p className='text-[#FFFFFF] font-poppins font-[400] text-[16px] leading-[170%] tracking-normal text-center px-2'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
+                <button className='w-[153px] h-[49px] rounded-[10px] bg-[#FFFFFF] flex justify-self-center justify-center items-center place-content-center '>View more</button>
             </div>
         </div>
 
-        <p className='font-poppins font-medium text-[24px] leading-[159%] tracking-normal justify-self-center text-center'>You will be in good Company</p>
+        <p className='font-poppins font-[500] text-[24px] leading-[159%] tracking-normal justify-self-center text-center'>You will be in good Company</p>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[0px] lg:gap-[115px] justify-items-center mt-10 mb-[43px] lg:pl-[155px] lg:pr-[200px]'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  lg:gap-[115px] justify-items-center md:mt-10 lg:mt-10  md:mb-[43px] lg:mb-[43px] lg:pl-[155px] lg:pr-[200px]'>
             {images.map((image,index) => (
                 <div key={index}>{image.img}</div>
             ))}

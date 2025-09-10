@@ -60,7 +60,7 @@ function Footer() {
       </div>
 
       <div className=" py-4">
-        <p className="text-center font-Poppins font-normal text-[11px] md:text-[16px] leading-[100%] tracking-[0%] text-[#515151]">
+        <p className="text-center font-Poppins font-400 text-[13px] md:text-[16px] leading-[100%] tracking-[0%] text-[#686868]">
           Copyright © 2021 Lorem All rights Reserved
         </p>
       </div>

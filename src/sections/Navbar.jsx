@@ -32,71 +32,74 @@ const Header = () => {
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-md ">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center max-w-[1536px]">
-        {/* Logo */}
-        <div className="flex-1 text-left md:text-left ">
-          <div className="text-2xl font-bold text-sky-600">LOGO</div>
-        </div>
+  <div className="container mx-auto px-6 py-4 flex justify-between items-center max-w-[1536px]">
+    {/* Logo */}
+    <div className="flex-1 text-left md:text-left ">
+      <div className="text-2xl font-bold text-sky-600">LOGO</div>
+    </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8 font-[400] relative ">
-          {navLinks.map((link) => (
-            <div key={link.id} className="relative ml-10">
-              {/* Dot Indicator */}
-              {active === link.id && (
+    {/* Desktop Navigation */}
+    <nav className="hidden lg:flex items-center space-x-8 font-[400] relative ">
+  {navLinks.map((link) => (
+    <div key={link.id} className="relative ml-10">
+      {active === link.id && (
+        <span className="absolute -top-2 left-0 w-2 h-2 bg-[#08D3BB] rounded-full"></span>
+      )}
+      <a
+        href={`#${link.id}`}
+        className={`transition hover:text-sky-700 ${
+          active === link.id ? "text-[#1090CB]" : "text-gray-700"
+        }`}
+      >
+        {link.label}
+      </a>
+    </div>
+  ))}
+  <button className="bg-sky-600 text-white px-5 py-2 rounded-md hover:bg-sky-700 transition">
+    Contact Us
+  </button>
+</nav>
+    {/* Hamburger / Close Icon */}
+    <button
+      onClick={() => setIsOpen(!isOpen)}
+      className="lg:hidden text-sky-600 focus:outline-none z-50"
+    >
+      {isOpen ? <X size={28} /> : <Menu size={28} />}
+    </button>
+  </div>
 
-                <span className="absolute -top-2 left-0 w-2 h-2 bg-[#08D3BB] rounded-full"></span>
-
-              )}
-              <a
-                href={`#${link.id}`}
-                className={`transition hover:text-sky-700 ${active === link.id ? "text-[#1090CB]" : "text-gray-700"}`}
-              >
-                {link.label}
-              </a>
-            </div>
-          ))}
-          <button className="bg-sky-600 text-white px-5 py-2 rounded-md hover:bg-sky-700 transition">
-            Contact Us
-          </button>
-        </nav>
-
-        {/* Hamburger Icon */}
-        <button onClick={() => setIsOpen(true)} className="md:hidden text-sky-600 focus:outline-none">
-          <Menu size={28} />
+  {/* Mobile Dropdown */}
+  {isOpen && (
+    <div className="lg:hidden w-full bg-white shadow-lg font-semibold">
+      <div className="flex flex-col items-center space-y-6 py-8 px-6">
+        {navLinks.map((link) => (
+          <a
+            key={link.id}
+            href={`#${link.id}`}
+            className={`w-full text-center text-lg py-2 rounded-md transition ${
+              active === link.id
+                ? "text-[#1090CB] bg-sky-50"
+                : "text-gray-700"
+            }`}
+            onClick={() => {
+              setActive(link.id);
+              setIsOpen(false); // close dropdown on link click
+            }}
+          >
+            {link.label}
+          </a>
+        ))}
+        <button
+          className="w-full bg-sky-600 text-white text-lg px-4 py-3 rounded-md hover:bg-sky-700 transition"
+          onClick={() => setIsOpen(false)} // close on button click
+        >
+          Contact Us
         </button>
       </div>
+    </div>
+  )}
+</header>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="lg:hidden w-full bg-white shadow-lg font-semibold">
-          <div className="flex flex-col items-center space-y-6 py-8 px-6">
-            {navLinks.map((link) => (
-              <a
-                key={link.id}
-                href={`#${link.id}`}
-                className={`w-full text-center text-lg py-2 rounded-md transition ${active === link.id
-                  ? "text-[#1090CB] bg-sky-50"
-                  : "text-gray-700"
-                  }`}
-                onClick={() => {
-                  setActive(link.id);
-                  setIsOpen(false);
-                }}
-              >
-                {link.label}
-              </a>
-            ))}
-            <button
-              className="w-full bg-sky-600 text-white text-lg px-4 py-3 rounded-md hover:bg-sky-700 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact Us
-            </button>
-          </div>
-        </div>
-      )}
-    </header>
   );
 };
 
