@@ -11,7 +11,7 @@ import Footer from "./sections/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden ">
+    <div className=" overflow-x-hidden ">
       <div className="max-w-full mx-auto px- sm:px- lg:px-">
         <Navbar/>
         <main>

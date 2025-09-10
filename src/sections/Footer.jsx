@@ -7,8 +7,8 @@ import instagram from '../assets/instagram.png'
 
 function Footer() {
   return (
-     <footer className="bg-white lg:ml-[101px] lg:mr-[120px] md:pt-[40px]">
-      <div className=" py-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-15 md:text-center text-center lg:text-left">
+     <footer className="bg-white lg:ml-[101px] lg:mr-[120px] md:pt-[40px]  justify-self-center">
+      <div className=" py-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-15 md:text-center text-center lg:text-left max-w-[1536px]">
     
         <div className=''>
           <h2 className="font-Poppins font-bold text-base leading-[100%] tracking-normal text-[#00329B]">LOGO</h2>
@@ -60,7 +60,7 @@ function Footer() {
       </div>
 
       <div className=" py-4">
-        <p className="text-center font-Poppins font-normal text-[16px] leading-[100%] tracking-[0%] text-[#515151]">
+        <p className="text-center font-Poppins font-normal text-[11px] md:text-[16px] leading-[100%] tracking-[0%] text-[#515151]">
           Copyright © 2021 Lorem All rights Reserved
         </p>
       </div>

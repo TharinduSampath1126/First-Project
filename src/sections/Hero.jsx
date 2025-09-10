@@ -5,14 +5,14 @@ import greenshape from  '../assets/greenshape.png'
 
 export default function Hero() {
   return (
-    <section className=' justify-self-center'>
+    <section id='hero' className='bg-[#1090CB]/10 lg:min-h-screen w-full flex items-center justify-center relative'>
 
-        <div className='max-w-[1536px]  flex flex-col-reverse md:flex-row items-center justify-between bg-[#1090CB]/10 px-6 sm:px-10 md:px-16 lg:px-24 py- md:pb-'>
+        <div className='max-w-[1536px]  flex flex-col-reverse md:flex-row items-center justify-between  px-6 sm:px-10 md:px-16 lg:px-24 py- md:pb-'>
 
           <img src={blueshape} alt="Blue Shape" className='hidden  absolute top-[220px] left-[1430px]'/>
           <img src={greenshape} alt="Green Shape" className='hidden  absolute top-[345px] left-[37px]'/>
 
-          <div className=" w-full md:w-1/2 h-150 text-center md:text-left mt-10 md:mt-[102px] md:ml-5 items-center">
+          <div className=" w-full md:w-1/2 h-150 text-center md:text-left mt-10 md:mt-[102px] md:ml-5 items-center lg:mt-45">
             <h1 className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]  font-bold leading-snug mb-6">
               Experienced <span className="text-[#1090CB]">mobile and web</span> <br />
               applications and website <br />
