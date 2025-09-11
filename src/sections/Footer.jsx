@@ -7,15 +7,15 @@ import instagram from '../assets/instagram.png'
 
 function Footer() {
   return (
-     <footer className="bg-white lg:ml-[101px] lg:mr-[120px] md:pt-[40px]  justify-self-center">
-      <div className=" py-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-15 md:text-center text-center lg:text-left max-w-[1536px]">
+     <footer className="bg-white lg:px-[100px] md:pt-[40px]  justify-self-center ">
+      <div className=" py-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-15 md:text-center text-center lg:text-left max-w-[1330px]">
     
         <div className=''>
           <h2 className="font-Poppins font-bold text-base leading-[100%] tracking-normal text-[#00329B]">LOGO</h2>
           <p className=" mt-8 font-Poppins font-normal text-[16px] leading-[100%] tracking-[0%] text-[#515151]">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           </p>
-          <p className="text-gray-800 mt-8 text-sm font-[400]">@Lorem</p>
+          <p className=" mt-8 text-[#515151] text-sm font-[400]">@Lorem</p>
         </div>
 
         

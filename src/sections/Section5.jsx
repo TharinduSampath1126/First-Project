@@ -9,9 +9,9 @@ function Section5() {
   return (
     <div className='container mx-auto px-4 md:px-6 '>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-[100px] lg:mb-[179px]">
-        <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:p-12 ">
-          <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-[100px] lg:mb-[100px] ">
+        <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:pl-[123px] lg:pt-12 lg:mt-15  ">
+          <div className=''>
             <div className="flex items-center">
               <div className="bg-[#08D3BB] flex justify-center items-center w-15 h-13 md:w-[58px] md:h-[58px] rounded-4xl">
                 <img src={happy1} alt="happy1" className="w-6 h-6 md:w-8 md:h-8" />
@@ -37,11 +37,11 @@ function Section5() {
 
       
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  mb-[86px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  mb-[86px]  ">
         <div className="flex items-center justify-center order-2 lg:order-1">
           <img src={Frame23} alt="Frame23" className="max-w-full h-auto" />
         </div>
-        <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:p-12 order-1 lg:order-2">
+        <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:p-12 lg:pr-30 order-1 lg:order-2 lg:mt-15 ">
           <div className=''>
                 <div className='flex'>
                   <div className={`bg-[#1090CB] flex justify-center items-center w-15 h-13 md:w-[58px] md:h-[58px] rounded-4xl mt-6 md:mt-0 lg:mt-0`}>
@@ -53,7 +53,7 @@ function Section5() {
                   </div>
                 </div>
               </div>
-            <p className='font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text of the printing.</span> </p>
+            <p className='font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text <br /> of the printing.</span> </p>
             <p className='font-poppins font-[400] text-[16px] leading-[170%] tracking-normal text-[#545454]'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
           </div>
       </div>
@@ -61,8 +61,8 @@ function Section5() {
 
       
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:p-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap- ">
+        <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:pl-[123px] lg:pr-20 lg:pt-12 lg:mt-13 ">
           <div className=''>
                 <div className='flex'>
                       <div className={`bg-[#9208D3] flex justify-center items-center w-15 h-13 md:w-[58px] md:h-[58px] rounded-4xl mt-6 md:mt-0 lg:mt-0`}>
@@ -74,11 +74,11 @@ function Section5() {
                       </div>
                     </div>
                 </div>
-                <p className='font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text of the printing.</span> </p>
+                <p className='font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text <br /> of the printing.</span> </p>
                 <p className='font-poppins font-[400] text-[16px] leading-[170%] tracking-normal text-[#545454]'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
         </div>
         <div className="flex items-center justify-center ">
-          <img src={Frame24} alt="Frame24" className="max-w-full h-auto" />
+          <img src={Frame24} alt="Frame24" className="max-w-full lg:max-w-[1000px] h-auto" />
         </div>
       </div>
     </div>

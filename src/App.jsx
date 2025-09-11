@@ -12,7 +12,7 @@ import Footer from "./sections/Footer";
 function App() {
   return (
     <div className=" overflow-x-hidden ">
-      <div className="max-w-full mx-auto px- sm:px- lg:px-">
+      <div className=" px- sm:px- lg:px-  ">
         <Navbar/>
         <main>
           <Hero/>

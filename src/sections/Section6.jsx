@@ -54,7 +54,7 @@ function Section6() {
         
         
 
-        <div className='grid grid-cols-1  justify-self-center lg:grid-cols-2 gap-10 mb-[100px] lg:mb-[184px] md:justify-self-center lg:justify-self-center font-[400] lg:mx-o   '>
+        <div className=' grid grid-cols-1  justify-self-center lg:grid-cols-2 gap-10 mb-[100px] lg:mb-[184px] md:justify-self-center lg:justify-self-center font-[400] lg:ml-0   '>
             <div className='container space-x-5 ml-[10px] mr-[10px] md:mx-auto lg:mx-auto py-5 w-auto md:w-[572px] md:h-[459px] lg:w-[572px] lg:h-[459px] rounded-[20px] bg-[#F4F4F4] place-content-center space-y-10 '>
                 <p className='text-[#252525] font-poppins font-[600] text-[25px] leading-[170%] tracking-normal text-center'>Lorem Ipsum is simply <br /> dummy text.</p>
                 <p className='text-[#545454] font-poppins font-[400] sm:text-[12px] md:text-[14px] lg:text-[16px] leading-[170%] tracking-normal text-center px-2'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>

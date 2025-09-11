@@ -4,7 +4,7 @@ import starIcon from '../assets/Star.png'
 
 function Contact() {
   return (
-    <div className='relative'>
+    <div className='relative flex justify-self-center bg-[#1090CB]'>
 
       {/*  Star Icon */}
       <img 
@@ -20,7 +20,8 @@ function Contact() {
         className="hidden lg:block absolute top-[85px] right-[400px] w-[54px] h-[54px] z-10" 
       />
 
-      <div className=' lg:h-[534px] md:h-[530px] h-[450px] bg-[#E8F4FA]  grid place-items-center font-[400]'>
+      <div className=' lg:w-[1536px]'>
+        <div className='  lg:h-[534px] md:h-[530px] h-[450px] bg-[#E8F4FA]  grid place-items-center font-[400] '>
         <div className=' grid gap-[80px]'>
             <div>
               <p className='font-poppins font-[600]  lg:text-[30px] md:text-[27px] text-[25px] leading-[170%] tracking-normal text-center ml-[10px] mr-[10px]'>Lorem Ipsum <span className='font-poppins font-[600] lg:text-[30px] md:text-[27px] text-[25px] leading-[170%] tracking-normal text-center'>is simply dummy <br /> text of the printing.</span> </p>
@@ -36,6 +37,7 @@ function Contact() {
                 </div>
             </div>
         </div>
+      </div>
       </div>
     </div>
   )
