@@ -1,5 +1,5 @@
 import React from 'react'
-import Frame22 from '../assets/Frame22.png'
+import Frame22 from '../assets/Frame2222.png'
 import Frame23 from '../assets/Frame23.png'
 import Frame24 from '../assets/Frame24.jpg'
 import happy1 from '../assets/happy1.png'
@@ -7,7 +7,7 @@ import happy1 from '../assets/happy1.png'
 function Section5() {
 
   return (
-    <div className='container mx-auto px-4 md:px-6 '>
+    <div className='container mx-auto px- md:px- '>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-[100px] lg:mb-[100px] ">
         <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:pl-[123px] lg:pt-12 lg:mt-15  ">
@@ -61,7 +61,7 @@ function Section5() {
 
       
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap- ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 ">
         <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:pl-[123px] lg:pr-20 lg:pt-12 lg:mt-13 ">
           <div className=''>
                 <div className='flex'>
@@ -77,7 +77,7 @@ function Section5() {
                 <p className='font-poppins font-[600] text-2xl md:text-3xl leading-tight text-[#1090CB]'>Lorem Ipsum <span className='text-[#252525]'>is simply dummy text <br /> of the printing.</span> </p>
                 <p className='font-poppins font-[400] text-[16px] leading-[170%] tracking-normal text-[#545454]'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
         </div>
-        <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center lg:ml-20 ">
           <img src={Frame24} alt="Frame24" className="max-w-full lg:max-w-[1000px] h-auto" />
         </div>
       </div>

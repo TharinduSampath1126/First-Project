@@ -27,14 +27,14 @@ function Contact() {
               <p className='font-poppins font-[600]  lg:text-[30px] md:text-[27px] text-[25px] leading-[170%] tracking-normal text-center ml-[10px] mr-[10px]'>Lorem Ipsum <span className='font-poppins font-[600] lg:text-[30px] md:text-[27px] text-[25px] leading-[170%] tracking-normal text-center'>is simply dummy <br /> text of the printing.</span> </p>
             </div>
             
-            <div className='  grid grid-cols-1 justify-items-center-safe md:flex lg:flex '>
-                <div className=''>
+            <div className='flex items-center gap-2 flex-col md:flex-row px-4 md:px-0 '>
+              
                   {/* <textarea value="        Enter your email" name="" id="" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-[300px] h-[50px]'> </textarea> */}
-                  <textarea defaultValue="     Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-[300px] h-[50px]' />
-                </div>
-                <div>
-                  <button className='lg:w-[173px] lg:h-[67px] md:w-[173px] md:h-[67px] w-[173px] h-[50px] font-[500] bg-[#000000] rounded-[10px] text-[#FFF4F4] lg:ml-10 md:ml-10'>SUBSCRIBE</button>
-                </div>
+                  <textarea defaultValue="     Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-full h-[50px]' />
+           
+     
+                  <button className='lg:h-[67px]  md:h-[67px] w-full h-[50px] font-[500] bg-[#000000] rounded-[10px] text-[#FFF4F4] md:w-[173px]'>SUBSCRIBE</button>
+            
             </div>
         </div>
       </div>
