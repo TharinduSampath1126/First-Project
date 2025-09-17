@@ -22,7 +22,7 @@ const Section3 = () => {
     {
       icon: <img src={s33} alt="AR/VR" className="w-6 h-6 md:w-8 md:h-8" />,
       title: "AR/VR Solutions",
-      description: "Lorem Ipsum is simply .",
+      description: "Lorem Ipsum is simply ",
       bgColor: "bg-blue-100",
     },
     {
@@ -34,7 +34,7 @@ const Section3 = () => {
   ];
 
   return (
-    <section id="Aboutus" className="max-w-[1536px] md:py-[43px] bg-white justify-self-center lg:mr-[]">
+    <section id="" className="max-w-[1536px] md:py-[43px] bg-white justify-self-center lg:mr-[]">
       <div className=" max-w-7xl mx-auto lg:ml-[123px]  font-[400] mt-10 mb-10 lg:mt-[0px] lg:mb-[0px] ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => (

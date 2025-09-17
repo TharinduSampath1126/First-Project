@@ -4,9 +4,14 @@ import starIcon from '../assets/Star.png'
 
 function Contact() {
   return (
-    <div className='relative flex justify-self-center bg-[#1090CB]'>
+    <section id='blog'>
+      <div className='relative justify-self-center bg-[#1090CB]/10 w-full '>
 
-      {/*  Star Icon */}
+      
+
+      <div className='relative lg:w-[1536px] justify-self-center '>
+
+        {/*  Star Icon */}
       <img 
         src={starIcon} 
         alt="Star Icon" 
@@ -19,8 +24,6 @@ function Contact() {
         alt="Pai Chart Icon" 
         className="hidden lg:block absolute top-[85px] right-[400px] w-[54px] h-[54px] z-10" 
       />
-
-      <div className=' lg:w-[1536px]'>
         <div className='  lg:h-[534px] md:h-[530px] h-[450px] bg-[#E8F4FA]  grid place-items-center font-[400] '>
         <div className=' grid gap-[80px]'>
             <div>
@@ -30,9 +33,9 @@ function Contact() {
             <div className='flex items-center gap-2 flex-col md:flex-row px-4 md:px-0 '>
               
                   {/* <textarea value="        Enter your email" name="" id="" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-[300px] h-[50px]'> </textarea> */}
-                  <textarea defaultValue="     Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-full h-[50px]' />
-           
-     
+                  {/* <textarea defaultValue="     Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-full h-[50px]' /> */}
+
+                  <input type="email" name="" id="" value="Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-full h-[50px]'/>
                   <button className='lg:h-[67px]  md:h-[67px] w-full h-[50px] font-[500] bg-[#000000] rounded-[10px] text-[#FFF4F4] md:w-[173px]'>SUBSCRIBE</button>
             
             </div>
@@ -40,6 +43,7 @@ function Contact() {
       </div>
       </div>
     </div>
+    </section>
   )
 }
 

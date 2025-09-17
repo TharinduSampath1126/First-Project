@@ -28,7 +28,8 @@ function Section6() {
     ]
 
   return (
-    <div className='relative mt-[70px] lg:mt-[163px] max-w-[1536px] mx-auto px-4 overflow-hidden lg:p-[35px]'>
+    <section id='services'>
+        <div className='relative mt-[70px] lg:mt-[163px] max-w-[1536px] mx-auto px-4 overflow-hidden lg:p-[35px]'>
 
         {/* Left Background Frame (Frame 25) */}
         <img 
@@ -63,7 +64,7 @@ function Section6() {
             <div className='container relative z-10 mx-auto py-5 ml-[10px] mr-[10px] w-auto md:w-[572px] md:h-[459px] lg:w-[572px] lg:h-[459px] rounded-[20px] bg-[#1090CB] place-content-center space-y-10 '>
                 <p className='text-[#FFFFFF] font-poppins font-[600] text-[25px] leading-[170%] tracking-normal text-center'>Lorem Ipsum is simply <br /> dummy text.</p>
                 <p className='text-[#FFFFFF] font-poppins font-[400] text-[16px] leading-[170%] tracking-normal text-center px-2'>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS. </p>
-                <button className='w-[153px] h-[49px] rounded-[10px] bg-[#FFFFFF] flex justify-self-center justify-center items-center place-content-center '>View more</button>
+                <button className='w-[153px] h-[49px] rounded-[10px] bg-[#FFFFFF] flex justify-self-center justify-center items-center place-content-center text-[#1090CB]'>View more</button>
             </div>
         </div>
 
@@ -76,6 +77,7 @@ function Section6() {
         </div>
 
     </div>
+    </section>
   )
 }
 

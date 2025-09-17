@@ -9,8 +9,15 @@ const Header = () => {
     { id: "hero", label: "Home" },
     { id: "Aboutus", label: "About Us" },
     { id: "services", label: "Services" },
-    { id: "blog", label: "Blog" },
+    { id: "blog", label: "Blog",  },
   ];
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,25 +47,25 @@ const Header = () => {
 
     {/* Desktop Navigation */}
     <nav className="hidden lg:flex items-center space-x-8 font-[400] relative ">
-  {navLinks.map((link) => (
-    <div key={link.id} className="relative ml-10">
-      {active === link.id && (
-        <span className="absolute -top-2 left-0 w-2 h-2 bg-[#08D3BB] rounded-full"></span>
-      )}
-      <a
-        href={`#${link.id}`}
-        className={`transition hover:text-sky-700 ${
-          active === link.id ? "text-[#1090CB]" : "text-gray-700"
-        }`}
-      >
-        {link.label}
-      </a>
-    </div>
-  ))}
-  <button className="bg-sky-600 text-white px-5 py-2 rounded-md hover:bg-sky-700 transition">
-    Contact Us
-  </button>
-</nav>
+      {navLinks.map((link) => (
+        <div key={link.id} className="relative ml-10">
+          {active === link.id && (
+            <span className="absolute -top-2 left-0 w-2 h-2 bg-[#08D3BB] rounded-full"></span>
+          )}
+          <button
+            onClick={() => scrollToSection(link.id)}
+            className={`transition hover:text-sky-700 ${
+              active === link.id ? "text-[#1090CB]" : "text-gray-700"
+            }`}
+          >
+            {link.label}
+          </button>
+        </div>
+      ))}
+      <button className="bg-sky-600 text-white px-5 py-2 rounded-md hover:bg-sky-700 transition">
+        Contact Us
+      </button>
+    </nav>
     {/* Hamburger / Close Icon */}
     <button
       onClick={() => setIsOpen(!isOpen)}
@@ -82,6 +89,7 @@ const Header = () => {
                 : "text-gray-700"
             }`}
             onClick={() => {
+              
               setActive(link.id);
               setIsOpen(false); // close dropdown on link click
             }}

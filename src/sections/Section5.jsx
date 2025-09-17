@@ -7,7 +7,8 @@ import happy1 from '../assets/happy1.png'
 function Section5() {
 
   return (
-    <div className='container mx-auto px- md:px- '>
+    
+    <section className='max-w-[1536px] justify-self-center'>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-[100px] lg:mb-[100px] ">
         <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:pl-[123px] lg:pt-12 lg:mt-15  ">
@@ -61,7 +62,7 @@ function Section5() {
 
       
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-15  ">
         <div className="space-y-6 md:space-y-8 p-4 md:p-8 lg:pl-[123px] lg:pr-20 lg:pt-12 lg:mt-13 ">
           <div className=''>
                 <div className='flex'>
@@ -81,7 +82,9 @@ function Section5() {
           <img src={Frame24} alt="Frame24" className="max-w-full lg:max-w-[1000px] h-auto" />
         </div>
       </div>
-    </div>
+
+      </section>
+    
   )
 }
 
