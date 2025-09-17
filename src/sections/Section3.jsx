@@ -34,7 +34,7 @@ const Section3 = () => {
   ];
 
   return (
-    <section id="" className="max-w-[1536px] md:py-[43px] bg-white justify-self-center lg:mr-[]">
+    <section id="" className="max-w-[1536px] md:py-[43px] bg-white justify-self-center lg:mr-[] border-b-[0.7px] border-[#C7C7C7] ">
       <div className=" max-w-7xl mx-auto lg:ml-[123px]  font-[400] mt-10 mb-10 lg:mt-[0px] lg:mb-[0px] ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => (
@@ -54,9 +54,7 @@ const Section3 = () => {
 
       </div>
 
-        <div className="w-[1536px] mt-7 justify-self-center">
-          <hr className="border border-[#D2D2D2] mt-[5px] " />
-        </div>
+        
       
     </section>
   );
