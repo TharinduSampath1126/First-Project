@@ -35,7 +35,7 @@ function Contact() {
                   {/* <textarea value="        Enter your email" name="" id="" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-[300px] h-[50px]'> </textarea> */}
                   {/* <textarea defaultValue="     Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-full h-[50px]' /> */}
 
-                  <input type="email" name="" id="" value="Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-full h-[50px]'/>
+                  <input type="email" name="" id="" defaultValue="Enter your email" className='bg-[#FFFFFF] rounded-[10px] content-center text-[#787878] lg:w-[532px] lg:h-[67px] md:w-[532px] md:h-[67px] w-full h-[50px]'/>
                   <button className='lg:h-[67px]  md:h-[67px] w-full h-[50px] font-[500] bg-[#000000] rounded-[10px] text-[#FFF4F4] md:w-[173px]'>SUBSCRIBE</button>
             
             </div>

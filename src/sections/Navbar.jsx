@@ -75,9 +75,14 @@ const Header = () => {
     </button>
   </div>
 
+  {/* Background Blur Overlay */}
+  {isOpen && (
+    <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40"></div>
+  )}
+
   {/* Mobile Dropdown */}
   {isOpen && (
-    <div className="lg:hidden w-full bg-white shadow-lg font-semibold">
+    <div className="lg:hidden w-full bg-white shadow-lg font-semibold z-50 relative">
       <div className="flex flex-col items-center space-y-6 py-8 px-6">
         {navLinks.map((link) => (
           <a
@@ -89,7 +94,7 @@ const Header = () => {
                 : "text-gray-700"
             }`}
             onClick={() => {
-              
+              scrollToSection(link.id);
               setActive(link.id);
               setIsOpen(false); // close dropdown on link click
             }}
