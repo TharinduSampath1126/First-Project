@@ -1,9 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import s31 from "../assets/s31.png";
 import s32 from "../assets/s32.png";
 import s33 from "../assets/s33.png";
 import s34 from "../assets/s34.png";
-
 
 const Section3 = () => {
   const services = [
@@ -34,59 +34,72 @@ const Section3 = () => {
   ];
 
   return (
-    <section id="" className="max-w-[1536px] md:py-[43px] bg-white justify-self-center lg:mr-[] border-b-[0.7px] border-[#C7C7C7] ">
-      <div className=" max-w-7xl mx-auto lg:ml-[123px]  font-[400] mt-10 mb-10 lg:mt-[0px] lg:mb-[0px] ">
+    <motion.section 
+      id="services"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6 }}
+      className="max-w-[1536px] md:py-[43px] bg-white justify-self-center lg:mr-[] border-b-[0.7px] border-[#C7C7C7]"
+    >
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="max-w-7xl mx-auto lg:ml-[123px] font-[400] mt-10 mb-10 lg:mt-[0px] lg:mb-[0px]"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => (
-            <div key={index} className="flex items-start space-x-4 p-4 justify-center">
-              <div className={`p-3 md:p-4 rounded-xl ${service.bgColor}`}>
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ 
+                duration: 0.5, 
+                delay: 0.2 + index * 0.1,
+                type: "spring",
+                stiffness: 100
+              }}
+              whileHover={{ scale: 1.05 }}
+              className="flex items-start space-x-4 p-4 justify-center"
+            >
+              <motion.div 
+                className={`p-3 md:p-4 rounded-xl ${service.bgColor}`}
+                whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                transition={{ duration: 0.5 }}
+              >
                 {service.icon}
-              </div>
-              <div>
-                <h3 className="text-base md:text-lg font-semibold mb-1">{service.title}</h3>
-                <p className="text-sm md:text-base text-gray-600">{service.description}</p>
-              </div>
-            </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+              >
+                <motion.h3 
+                  className="text-base md:text-lg font-semibold mb-1"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  {service.title}
+                </motion.h3>
+                <motion.p 
+                  className="text-sm md:text-base text-gray-600"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                >
+                  {service.description}
+                </motion.p>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
-        
-        
-
-      </div>
-
-        
-      
-    </section>
+      </motion.div>
+    </motion.section>
   );
-};export default Section3;
+};
 
-
-
-{/* ================= SERVICES SECTION ================= */}
-
-
-//       <section className="py-12 bg-white">
-//             <div className="absolute left-0 top-160 z-80">
-//                 <img src={GreenCurve} alt="icon" className="w-10 h-90" />
-//             </div> 
-
-
-//             <div className="max-w-7xl mx-auto px-6">
-//                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-//                     {services.map((service, index) => (
-//                         <div key={index} className="flex items-start space-x-4">
-//                             <div className={p-4 rounded-xl ${service.bgColor}}>
-//                             {service.icon}
-//                             </div>
-//                             <div>
-//                                 <h3 className="text-lg font-semibold">{service.title}</h3>
-//                                 <p className="text-gray-600 text-sm">{service.description}</p>
-//                             </div>
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//       </section>
-//     </div>
-//   );
-// };
+export default Section3;
