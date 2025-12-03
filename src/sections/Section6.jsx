@@ -1,13 +1,11 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import beneoshop from '../assets/beneoshop.png'
 import caspio from '../assets/caspio.png'
-import Hypergrid from '../assets/Hypergrid.png'
+import Hypergrid from '../assets/HyperGrid.png'
 import leotrippi from '../assets/leotrippi.png'
 import bellIcon from '../assets/Bell.png'
 import frame25 from '../assets/yellowshape.png'
-import PaiChart from '../assets/PaiChart.png'
-import starIcon from '../assets/Star.png'
+
 import frame26 from '../assets/pinkshape.png'
 
 
