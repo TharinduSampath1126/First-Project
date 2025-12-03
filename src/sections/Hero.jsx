@@ -12,7 +12,7 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className='bg-[#1090CB]/10 flex items-center justify-center relative mx-auto'
+      className='bg-[#1090CB]/10  flex items-center justify-center relative mx-auto'
     >
       <div className='max-w-[1536px] flex flex-col-reverse md:flex-row items-center justify-between px-6 sm:px-10 md:px-16 lg:pl-[123px] py-0 md:pb-0 relative'>
         <motion.img 
